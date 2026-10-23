@@ -11,7 +11,7 @@ Thank you for helping. Small, careful improvements are the most useful kind.
 
 ## Style
 
-Writing in this repository follows UK English, with no em dashes or Oxford commas. The [UK Copy Checker](https://github.com/elleanderson/uk-copy-checker) will tell you if anything slips through.
+Writing in this repository follows UK English, with no em dashes or Oxford commas. The [UK Copy Checker](https://github.com/elleanderson/uk-copy-checker) will flag anything that needs another look.
 
 ## Behaviour
 
