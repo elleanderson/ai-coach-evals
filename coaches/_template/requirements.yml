@@ -1,0 +1,5 @@
+coach: My Coach
+who_it_serves: Who the coach is for.
+promises:
+  - id: example
+    promise: One promise, written so anyone could check it.

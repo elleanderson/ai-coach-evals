@@ -1,0 +1,12 @@
+# Copy this folder, rename it after your coach and write your own cases.
+name: My Coach
+promise: One sentence on what the coach is for.
+pass_threshold: 0.8
+house_style: true
+cases:
+  - id: first-case
+    title: A short name for the situation
+    why: Why this case matters to the people the coach serves.
+    conversation:
+      - {role: user, content: "What a real person might say."}
+    checks: [asks_at_most_one_question, adds_no_new_numbers, {max_words: 120}]

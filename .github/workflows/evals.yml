@@ -1,0 +1,25 @@
+name: Evals
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Unit tests for the checks
+        run: pytest -q
+      - name: Run the New Leaf evals on recorded replies
+        id: evals
+        continue-on-error: true
+        run: python -m evals.runner new-leaf-coach --report
+      - name: Publish the eval report
+        if: always()
+        run: cat reports/new-leaf-coach.md >> "$GITHUB_STEP_SUMMARY"
