@@ -1,0 +1,18 @@
+name: Something Isn't Right
+description: Report a bug or a wrong result
+labels: [bug]
+body:
+  - type: textarea
+    attributes:
+      label: What Happened
+      description: What did you see, and what did you expect to see instead?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: How to Reproduce It
+      description: The smallest example or steps that show the problem.
+  - type: input
+    attributes:
+      label: Version
+      description: The release or commit you're using.
